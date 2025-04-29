@@ -12,6 +12,7 @@ struct ContentView: View {
             Text("Hello, world!")
             Text("Hey Ryo")
             Spacer()
+            Text("Femboy togo")
             
          
            
