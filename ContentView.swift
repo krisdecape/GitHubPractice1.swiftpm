@@ -3,8 +3,8 @@ import SwiftUI
 struct ContentView: View {
     @State var number1 = ""
     @State var number2 = ""
+    @State var answer = ""
     var body: some View {
-        @State var number3 = ""
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
