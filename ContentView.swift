@@ -6,16 +6,7 @@ struct ContentView: View {
     @State var answer = ""
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            Text("Hey Ryo")
-            Spacer()
-            
-            
-         
-           
+            Text("Quotes4U")
         }
     }
 }
