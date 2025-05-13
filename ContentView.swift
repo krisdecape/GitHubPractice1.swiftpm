@@ -4,7 +4,7 @@ struct ContentView: View {
     @State var selectedCategory = "Inspiration"
     @State var currentQuote = "Select a category and tap the button!"
     
-    let categories = ["Inspiration", "Encouragement", "Dedicated", "Hard-Work"]
+    let categories = ["Inspiration", "Encouragement", "Dedication", "Hard-Work"]
     
     
     let quotesByCategory: [String: [String]] = [
@@ -14,7 +14,7 @@ struct ContentView: View {
         "Encouragement": [
             ""
         ],
-        "Dedicated": [
+        "Dedication": [
             ""
         ],
         "Hard-Work": [
@@ -44,10 +44,6 @@ struct ContentView: View {
                 Text("Generate Quote")
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(12)
-                    .padding(.horizontal)
             }
         }
         .padding()
