@@ -4,29 +4,26 @@ struct ContentView: View {
     @State var selectedCategory = "Inspiration"
     @State var currentQuote = "Select a category and tap the button!"
     
-    let categories = ["Inspiration", "Encouragement", "Dedication", "Hard-Work"]
+    let categories = ["Inspiration", "Encouragement", "Self-Made", "Hard-Work"]
     
     let quotesByCategory: [String: [String]] = [
         "Inspiration": [
-            "The best way to get started is to quit talking and begin doing.",
-            "Dream big and dare to fail."
+            ""
         ],
         "Encouragement": [
-            "Keep going, everything you need will come to you at the perfect time.",
-            "You are capable of amazing things."
+            ""
         ],
-        "Dedication": [
-            "Success doesn’t come from what you do occasionally, it comes from what you do consistently.",
-            "Stay dedicated, it's not going to happen overnight."
+        "Self-Made": [
+            ""
         ],
         "Hard-Work": [
-            "There are no shortcuts to any place worth going.",
-            "Work hard in silence, let success make the noise."
+            ""
         ]
     ]
     
     var body: some View {
         ZStack {
+           
             LinearGradient(
                 gradient: Gradient(colors: [.purple, .blue, .mint]),
                 startPoint: .topLeading,
@@ -36,7 +33,7 @@ struct ContentView: View {
             
             VStack(spacing: 30) {
                 Text("💬 Quotes4You 💬")
-                    .font(.custom("Papyrus", size: 45))
+                    .font(.custom("Papyrus", size: 40))
                     .foregroundColor(.white)
                     .shadow(radius: 3)
                 
@@ -48,6 +45,7 @@ struct ContentView: View {
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal)
                 
+
                 Text(currentQuote)
                     .font(.title3)
                     .foregroundColor(.black)
@@ -60,7 +58,7 @@ struct ContentView: View {
                 
                 Button(action: generateQuote) {
                     Text("Generate Quote")
-                        .font(.custom("Optima", size: 30))
+                        .font(.headline)
                         .foregroundColor(.gray)
                         .padding()
                         .frame(maxWidth: .infinity)
