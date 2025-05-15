@@ -27,7 +27,6 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            // Background gradient
             LinearGradient(
                 gradient: Gradient(colors: [.purple, .blue, .mint]),
                 startPoint: .topLeading,
@@ -37,7 +36,7 @@ struct ContentView: View {
             
             VStack(spacing: 30) {
                 Text("💬 Quotes4You 💬")
-                    .font(.custom("Papyrus", size: 40))
+                    .font(.custom("Papyrus", size: 45))
                     .foregroundColor(.white)
                     .shadow(radius: 3)
                 
@@ -49,7 +48,6 @@ struct ContentView: View {
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal)
                 
-                // Quote box
                 Text(currentQuote)
                     .font(.title3)
                     .foregroundColor(.black)
@@ -62,11 +60,11 @@ struct ContentView: View {
                 
                 Button(action: generateQuote) {
                     Text("Generate Quote")
-                        .font(.headline)
-                        .foregroundColor(.white)
+                        .font(.custom("Optima", size: 30))
+                        .foregroundColor(.gray)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.blue.opacity(0.85))
+                        .background(Color.white)
                         .cornerRadius(15)
                         .shadow(radius: 5)
                 }
