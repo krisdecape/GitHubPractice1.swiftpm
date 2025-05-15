@@ -4,7 +4,7 @@ struct ContentView: View {
     @State var selectedCategory = "Inspiration"
     @State var currentQuote = "Select a category and tap the button!"
     
-    let categories = ["Inspiration", "Encouragement", "Dedication", "Hard-Work"]
+    let categories = ["Inspiration", "Encouragement", "Self-Made", "Hard-Work"]
     
     let quotesByCategory: [String: [String]] = [
         "Inspiration": [
@@ -15,7 +15,7 @@ struct ContentView: View {
             "Keep going, everything you need will come to you at the perfect time.",
             "You are capable of amazing things."
         ],
-        "Dedication": [
+        "Self-Made": [
             "Success doesn’t come from what you do occasionally, it comes from what you do consistently.",
             "Stay dedicated, it's not going to happen overnight."
         ],
@@ -27,6 +27,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+           
             LinearGradient(
                 gradient: Gradient(colors: [.purple, .blue, .mint]),
                 startPoint: .topLeading,
@@ -36,7 +37,7 @@ struct ContentView: View {
             
             VStack(spacing: 30) {
                 Text("💬 Quotes4You 💬")
-                    .font(.custom("Papyrus", size: 45))
+                    .font(.custom("Papyrus", size: 40))
                     .foregroundColor(.white)
                     .shadow(radius: 3)
                 
@@ -60,11 +61,17 @@ struct ContentView: View {
                 
                 Button(action: generateQuote) {
                     Text("Generate Quote")
-                        .font(.custom("Optima", size: 30))
-                        .foregroundColor(.gray)
+                        .font(.headline)
+                        .foregroundColor(.white)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.white)
+                        .background(
+                            LinearGradient(
+                                gradient: Gradient(colors: [.purple, .blue, .mint]),
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                         .cornerRadius(15)
                         .shadow(radius: 5)
                 }
