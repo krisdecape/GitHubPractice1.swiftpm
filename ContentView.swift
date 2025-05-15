@@ -8,20 +8,16 @@ struct ContentView: View {
     
     let quotesByCategory: [String: [String]] = [
         "Inspiration": [
-            "The best way to get started is to quit talking and begin doing.",
-            "Dream big and dare to fail."
+            ""
         ],
         "Encouragement": [
-            "Keep going, everything you need will come to you at the perfect time.",
-            "You are capable of amazing things."
+            ""
         ],
         "Self-Made": [
-            "Success doesn’t come from what you do occasionally, it comes from what you do consistently.",
-            "Stay dedicated, it's not going to happen overnight."
+            ""
         ],
         "Hard-Work": [
-            "There are no shortcuts to any place worth going.",
-            "Work hard in silence, let success make the noise."
+            ""
         ]
     ]
     
@@ -49,6 +45,7 @@ struct ContentView: View {
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal)
                 
+
                 Text(currentQuote)
                     .font(.title3)
                     .foregroundColor(.black)
@@ -62,16 +59,10 @@ struct ContentView: View {
                 Button(action: generateQuote) {
                     Text("Generate Quote")
                         .font(.headline)
-                        .foregroundColor(.white)
+                        .foregroundColor(.gray)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(
-                            LinearGradient(
-                                gradient: Gradient(colors: [.purple, .blue, .mint]),
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
+                        .background(Color.white)
                         .cornerRadius(15)
                         .shadow(radius: 5)
                 }
