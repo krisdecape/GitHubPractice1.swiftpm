@@ -8,16 +8,20 @@ struct ContentView: View {
     
     let quotesByCategory: [String: [String]] = [
         "Inspiration": [
-            ""
+            "Turn your wounds into wisdom. — Oprah Winfrey",
+            "The future belongs to those who believe in the beauty of their dreams. — Eleanor Roosevelt"
         ],
         "Encouragement": [
-            ""
+            "Success is not final, failure is not fatal: it is the courage to continue that counts. — Winston Churchill",
+            "It’s not who I am underneath, but what I do that defines me. — Bruce Wayne"
         ],
         "Self-Made": [
-            ""
+            "When one door closes, another one opens. - Kris Decape",
+            "All problems are temporary, don't let your problems take over you permanently - Kris Decape"
         ],
         "Hard-Work": [
-            ""
+            "There is no substitute for hard work. — Thomas Edison",
+            "It’s not about the medals; it’s about the hard work and sacrifice you put into it. — Simone Biles"
         ]
     ]
     
