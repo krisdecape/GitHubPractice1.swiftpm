@@ -22,8 +22,8 @@ struct ContentView: View {
         "Self-Made": [
             "When one door closes, another one opens. - Kris Decape",
             "All problems are temporary, don't let your problems take over you permanently - Kris Decape",
-            ". - Tsogtuguldur Erdenebulgan",
-            ". - Tsogtuguldur Erdenebulgan "
+            "When you fall, get up, keep your chin up, and keep walking. - Tsogtuguldur Erdenebulgan",
+            "Never judge someone who follows their heart over their mind. - Tsogtuguldur Erdenebulgan "
         ],
         "Hard-Work": [
             "There is no substitute for hard work. — Thomas Edison",
